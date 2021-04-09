@@ -1,6 +1,6 @@
 {
   "name": "redux-two-comp-thunk",
-  "homepage": "https://alexeyk500.github.io/My-Todo-App",
+  "homepage": "https://alexeyk500.github.io/redux-two-comp-thunk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
