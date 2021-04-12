@@ -14,7 +14,7 @@ function TodoItem (props) {
   if (props.todo.completed) {
     textStyle={textDecoration: 'line-through solid red'}
   }
-
+  console.log(textStyle)
   return (
     <li style={textStyle} key={props.todo.id}>
       <span>
