@@ -5,14 +5,14 @@ import {Provider} from 'react-redux';
 import AuthContainer from './components/Auth/AuthContainer';
 import TodoPartContainer from './components/TodoPart/TodoPartContainer';
 import thunk from 'redux-thunk';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 
 
 const store = createStore(RootReducer, applyMiddleware(thunk))
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <div>
           <Route exact path='/' component={AuthContainer} />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/todo' component={TodoPartContainer} />
         </div>
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
