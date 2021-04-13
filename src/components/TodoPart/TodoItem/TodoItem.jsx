@@ -12,9 +12,16 @@ function TodoItem (props) {
 
   let textStyle = {}
   if (props.todo.completed) {
-    textStyle={textDecoration: 'line-through solid red'}
+    //textStyle={textDecoration: 'line-through solid red'}
+    textStyle={
+      textDecorationLine: 'line-through',
+      WebkitTextDecorationLine: 'line-through',
+      textDecorationColor: 'red',
+      WebkitTextDecorationColor: 'red',
+    }
+
   }
-  console.log(textStyle)
+
   return (
     <li style={textStyle} key={props.todo.id}>
       <span>
